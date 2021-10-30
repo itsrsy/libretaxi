@@ -9,21 +9,21 @@ const (
 	Menu_AskLocation MenuId = 200
 	Menu_Feed        MenuId = 300
 	Menu_Post        MenuId = 400
-	Menu_Ban 	     MenuId = 999999
+	Menu_Ban         MenuId = 999999
 )
 
 type User struct {
-	UserId int64
-	MenuId MenuId
-	Username string
-	FirstName string
-	LastName string
-	Lon float64
-	Lat float64
+	UserId       int64
+	MenuId       MenuId
+	Username     string
+	FirstName    string
+	LastName     string
+	Lon          float64
+	Lat          float64
 	LanguageCode string
-	ReportCnt int
+	ReportCnt    int
 	ShadowBanned bool
-	locale *gotext.Locale
+	locale       *gotext.Locale
 }
 
 func (u *User) Locale() *gotext.Locale {

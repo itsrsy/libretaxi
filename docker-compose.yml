@@ -3,6 +3,7 @@ version: "3"
 volumes:
   db: {}
   rabbit: {}
+  server: {}
 
 services:
   db:
@@ -26,3 +27,6 @@ services:
     ports:
       - 127.0.0.1:8079:5672
       - 127.0.0.1:8080:15672
+  server:
+    hostname: rideshare
+    image: 
